@@ -1,50 +1,40 @@
-# React + TypeScript + Vite
+# Vault - Game Server Monetization Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Vault is a secure and simple platform for monetizing game server content, with a focus on Minecraft servers. It provides server owners with tools to manage access control, process payments, and track analytics.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Secure Access Control**: Robust authentication system to control access to premium server content
+- **Payment Processing**: Seamless payment integration supporting multiple payment methods including credit cards and cryptocurrency
+- **Analytics Dashboard**: Track server performance, player counts, and revenue metrics
+- **Multi-Server Support**: Manage multiple game servers from a single dashboard
+- **Transaction History**: View and manage all transactions across your servers
 
-## Expanding the ESLint configuration
+## Dashboard Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Real-time server status monitoring
+- Player count tracking
+- Revenue analytics and reporting
+- Transaction management
+- User access control
+- Payment method configuration
 
-- Configure the top-level `parserOptions` property like this:
+## Supported Payment Methods
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Credit/Debit Cards (Stripe)
+- Cryptocurrency
+- Apple Pay
+- Google Pay
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Security
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+Vault prioritizes security with:
+- End-to-end encryption
+- Secure payment processing
+- Regular security audits
+- DDOS protection
+- 24/7 monitoring
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## License
+
+Copyright © 2024 Vault. All rights reserved.
