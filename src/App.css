@@ -1,0 +1,16 @@
+@keyframes moving-bars {
+  0% {
+    opacity: 0;
+    height: 0;
+    transform: scaleY(0);
+  }
+  50% {
+    opacity: 1;
+    height: var(--target-height);
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 1;
+    height: var(--target-height);
+  }
+}
